@@ -155,7 +155,7 @@ export function StatusBadge({ status }: { status: string }) {
   };
   return (
     <span
-      className={`rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${styles[status] ?? styles.draft}`}
+      className={`rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${styles[status] ?? styles["draft"]}`}
     >
       {status}
     </span>
