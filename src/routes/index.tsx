@@ -153,12 +153,18 @@ function Index() {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-            <button className="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:block">
+            <Link
+              to="/auth"
+              className="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:block"
+            >
               Sign in
-            </button>
-            <button className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:opacity-90">
+            </Link>
+            <Link
+              to="/auth"
+              className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:opacity-90"
+            >
               Get started
-            </button>
+            </Link>
           </div>
         </div>
       </header>
@@ -186,10 +192,13 @@ function Index() {
             invoices, track payments, and get paid — without the busywork.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <button className="group inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:opacity-90">
+            <Link
+              to="/auth"
+              className="group inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:opacity-90"
+            >
               Start free today
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </button>
+            </Link>
             <button className="rounded-lg border border-border bg-card px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent">
               See how it works
             </button>
@@ -397,10 +406,13 @@ function Index() {
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             Join thousands of businesses sending their first BlueBill invoice today.
           </p>
-          <button className="mt-8 inline-flex items-center gap-2 rounded-lg bg-background px-6 py-3 text-base font-semibold text-foreground shadow-lg transition-all hover:opacity-90">
+          <Link
+            to="/auth"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-background px-6 py-3 text-base font-semibold text-foreground shadow-lg transition-all hover:opacity-90"
+          >
             Create your first invoice
             <ArrowRight className="h-4 w-4" />
-          </button>
+          </Link>
         </div>
       </section>
 
